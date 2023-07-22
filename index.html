@@ -5,22 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Penguin Fashion</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .font-bebas {
+        font-family: "Bebas Neue", sans-serif;
+      }
+      .font-roboto {
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
   </head>
   <body>
     <header>
       <!-- nav section start -->
-      <section>
-        <nav class="navbar"></nav>
+      <section class="bg-[#FFFBF0]">
+        <nav
+          class="max-w-7xl mx-auto flex flex-col md:flex-row lg:flex-row md:justify-between items-center gap-2 md:px-12 lg:px-24 py-5"
+        >
+          <!-- logo section -->
+          <div class="w-60">
+            <img src="assets/icons/logo.png" alt="logo" />
+          </div>
+
+          <!-- menu section -->
+          <div>
+            <ul
+              class="flex gap-5 text-[#3C3C3C] text-base font-roboto font-medium"
+            >
+              <li
+                class="cursor-pointer hover:text-[#85A019] transition-all duration-700 ease-in-out"
+              >
+                Home
+              </li>
+              <li
+                class="cursor-pointer hover:text-[#85A019] transition-all duration-700 ease-in-out"
+              >
+                Product
+              </li>
+              <li
+                class="cursor-pointer hover:text-[#85A019] transition-all duration-700 ease-in-out"
+              >
+                About Us
+              </li>
+              <li
+                class="cursor-pointer hover:text-[#85A019] transition-all duration-700 ease-in-out"
+              >
+                Contact Us
+              </li>
+            </ul>
+          </div>
+        </nav>
       </section>
       <!-- nav section end -->
 
       <!-- banner section start -->
-      <section>
-        <div class="banner">
-          <h1>Be the Penguins of Winter</h1>
-        </div>
-      </section>
-      <!-- nav section start -->
+      <!-- <section class="flex justify-center gap-10">
+          <div class="border-2 border-red-600 items-center">
+            <h1 class="text-[#363958] text-7xl font-bebas">
+              <span class="text-[#FABE4C]">Be the Penguins</span> <br />
+              of Winter
+            </h1>
+            <p class="text-[#3E3E3E] text-base font-roboto">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+            <button
+              type="submit"
+              class="text-[#fff] text-base font-roboto font-medium uppercase bg-gradient-to-r from-[#A4BC46] to-[#85A019] py-4 px-9 rounded-xl"
+            >
+              Buy Now
+            </button>
+          </div>
+          <div class="border-2 border-red-600">
+            <img src="assets/images/model.png" alt="model" />
+          </div>
+        </section> -->
+      <!-- banner section end -->
     </header>
     <main></main>
     <footer></footer>
